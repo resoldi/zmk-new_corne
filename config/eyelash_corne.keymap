@@ -53,31 +53,31 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "QWERTY";
+        Base {
+            display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                                  &kp UP                &kp Y             &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H             &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B           &kp SPACE              &kp DOWN              &kp N             &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &mt LCMD SPACE                                               &mt RSHIFT ENTER  &mo 2  &kp RALT
+&kp ESC    &kp Q  &kp W  &kp E     &kp R            &kp T                                  &kp UP                &kp Y             &kp U            &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D     &kp F            &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H             &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V            &kp B           &kp SPACE              &kp DOWN              &kp N             &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &lt 2 LS(SPACE)  &mt LCMD SPACE                                               &mt RSHIFT ENTER  &lt 1 BACKSPACE  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        Navi_Func {
+            display-name = "Nav";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &kp F10  &kp F9    &kp F8     &kp F7         &kp F6                                 &mmv MOVE_UP                     &trans  &kp HOME   &kp UP    &kp END    &trans  &trans
+&trans  &kp F11  &kp LALT  &kp LCTRL  &kp LSHIFT     &kp F12                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &kp F1   &kp F2    &kp F3     &kp F4         &kp F5   &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &kp PG_UP  &trans    &kp PG_DN  &trans  &trans
+                           &trans     &kp BACKSPACE  &trans                                                                  &trans  &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        raise_layer {
+        Num-Sym {
             display-name = "Num";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                               &mmv MOVE_UP                     &kp N6     &kp N7     &kp N8    &kp N9    &kp N0    &kp MINUS
