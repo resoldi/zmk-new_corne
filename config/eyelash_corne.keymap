@@ -80,9 +80,9 @@
             display-name = "Num";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                               &mmv MOVE_UP                     &kp N6     &kp N7            &kp N8             &kp N9    &kp N0    &kp UNDER
-&trans  &kp EXCL      &kp AT        &kp LPAR      &kp RPAR      &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LBKT  &kp RBKT  &kp EQUAL
+&trans  &kp EXCL      &kp AT        &kp LPAR      &kp RSHFT     &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LBKT  &kp RBKT  &kp EQUAL
 &trans  &out OUT_USB  &out OUT_BLE  &none         &none         &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS          &trans             &trans    &trans    &kp TILDE
-                                    &trans        &kp LSHFT     &kp SPACE                                                             &kp RSHFT  &trans            &trans
+                                    &trans        &kp LSHFT     &kp SPACE                                                             &trans     &trans            &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
