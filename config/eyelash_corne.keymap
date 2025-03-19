@@ -66,10 +66,10 @@
         Num-Navi {
             display-name = "Num/Nav";
             bindings = <
-&trans   &kp N1     &kp N2    &kp N3    &kp N4         &kp N5                                 &mmv MOVE_UP                     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS
-&kp TAB  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT      &kp F12                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
-&trans   &kp F1     &kp F2    &kp F3    &kp F4         &kp F5   &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &kp PG_UP  &kp COMMA  &kp DOT    &kp FSLH  &trans
-                              &trans    &kp BACKSPACE  &trans                                                                  &trans    &trans     &trans
+&kp GRAVE    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5                                 &mmv MOVE_UP                     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS
+&kp LS(TAB)  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &kp F12                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
+&trans       &kp F1     &kp F2    &kp F3    &kp F4     &kp F5   &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &kp PG_UP  &kp COMMA  &kp DOT    &kp FSLH  &trans
+                                  &trans    &trans     &trans                                                                  &trans    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -78,10 +78,10 @@
         Symbol {
             display-name = "Sym";
             bindings = <
-&kp TILDE  &kp EXCL       &kp AT            &kp HASH  &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS          &kp STAR           &kp LPAR  &kp RPAR  &kp UNDER
-&trans     &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR  &kp RSHFT  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LBKT  &kp RBKT  &kp EQUAL
-&trans     &trans         &trans            &none     &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS          &trans             &trans    &trans    &kp TILDE
-                                            &trans    &kp LSHFT  &kp SPACE                                                             &trans     &trans            &trans
+&kp TILDE  &kp EXCL       &kp AT            &kp HASH  &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp STAR         &kp LPAR  &kp RPAR   &kp UNDER
+&trans     &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR  &kp RSHFT  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp LBRC   &kp RIGHT_BRACE  &kp LBKT  &kp RBKT   &kp DQT
+&trans     &trans         &trans            &none     &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp MINUS  &kp EQUAL  &kp LT           &kp GT    &kp QMARK  &kp TILDE
+                                            &trans    &trans     &trans                                                                &trans     &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
