@@ -91,9 +91,9 @@
         Num-Navi {
             display-name = "Num/Nav";
             bindings = <
-&kp GRAVE    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5                                &mmv MOVE_UP                     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS
-&kp LS(TAB)  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
-&trans       &kp F1     &kp F2    &kp F3    &kp F4     &kp F5  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp PG_UP  &kp PG_DN  &kp COMMA  &kp DOT    &kp FSLH  &trans
+&kp GRAVE    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5                                 &msc SCRL_DOWN                  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS
+&kp LS(TAB)  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans                &msc SCRL_RIGHT  &none           &msc SCRL_LEFT  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans    &trans
+&trans       &kp F1     &kp F2    &kp F3    &kp F4     &kp F5  &kp C_MUTE                     &msc SCRL_UP                    &kp PG_UP  &kp PG_DN  &kp COMMA  &kp DOT    &kp FSLH  &trans
                                   &trans    &trans     &trans                                                                 &trans     &trans     &trans
             >;
 
